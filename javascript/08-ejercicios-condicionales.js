@@ -74,6 +74,23 @@ console.log(`Estamos en ${estacionAnio}`);
 // switch
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+let saludo;
+let idioma = "FRANCES".toLowerCase();
+
+switch (idioma){
+	case "ingles":
+		saludo = "Hello";
+		break;
+	case "frances":
+		saludo = "Bonjour";
+		break;
+	case "español":
+		saludo = "Hola";
+		break;
+	default:
+		saludo = "ERROR: Idioma no encontrado.";
+}
+console.log(saludo);
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 /*
