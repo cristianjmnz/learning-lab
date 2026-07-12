@@ -40,10 +40,34 @@ if (edad < 18){
 else{
 	console.log("Puede votar");
 }
-// 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
-//    dependiendo de la edad 
+
+// 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable dependiendo de la edad 
+let años = 21;
+
+const mayorEdad = años >= 18 ? "Adulto" : "Menor";
+console.log(mayorEdad);
 
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+let mes = "ENERO".toLowerCase();
+let estacionAnio;
+
+if (mes === "marzo" || mes === "abril" || mes === "mayo"){
+	estacionAnio = "Primavera";
+}
+else if (mes === "junio" || mes === "julio" || mes === "agosto"){
+	estacionAnio = "Verano";
+}
+else if (mes === "septiembre" || mes === "octubre" || mes === "noviembre"){
+	estacionAnio = "Otoño";
+}
+else if (mes === "diciembre" || mes === "enero" || mes === "febrero"){
+	estacionAnio = "Invierno";
+}
+else{
+	console.log("ERROR: Algo salio mal!!");
+}
+
+console.log(`Estamos en ${estacionAnio}`);
 
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
 
@@ -52,5 +76,35 @@ else{
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
+/*
+let mes = "marzo";
+let estacionAño;
 
+switch (mes){
+	case "marzo":
+	case "abril":
+	case "mayo":
+		estacionAño = "Primavera";
+		break;
+	case "junio":
+	case "julio":
+	case "agosto":
+		estacionAño = "Verano";
+		break;
+	case "septiembre":
+	case "octubre":
+	case "noviembre":
+		estacionAño = "Otoño";
+		break;
+	case "diciembre":
+	case "enero":
+	case "febrero":
+		estacionAño = "Invierno";
+		break;
+	default:
+		estacionAño = "Este mes no está asociado a ninguna estación del año";
+}
+
+console.log(estacionAño);
+*/
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
