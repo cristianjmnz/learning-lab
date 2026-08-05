@@ -61,9 +61,9 @@ meses.set("Verano", ["Junio", "Julio", "Agosto"]);
 console.log(meses);
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
-let datos = ["Cristian", "Jimenez", "Sanchez", "sajicri", 30, 666777888, "Avenida de la Constitución, 1"];
-let datosSet = new Set(datos);
-let datosMap = new Map();
-datosMap.set("DatosPersonales", datosSet);
+let frutas = ["Manzana", "Pera", "Sandia", "Platano","Pera"];
+let frutasSet = new Set(frutas);
+let frutasMap = new Map();
+frutasMap.set("Catalogo de Frutas", frutasSet);
 
-console.log(datosMap);
+console.log(frutasMap);
