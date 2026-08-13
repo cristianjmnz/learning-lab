@@ -6,6 +6,11 @@ for (let i = 1; i <= 20; i++){
 };
 
 // 2. Crea un bucle que sume todos los números del 1 al 100 y muestre el resultado
+for (let i = 1; i <=100; i++){
+    let suma = 0;
+    suma += i;
+    console.log(suma);
+}
 
 // 3. Crea un bucle que imprima todos los números pares entre 1 y 50
 
