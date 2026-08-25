@@ -1,6 +1,13 @@
 // 1. Crea una función que reciba dos números y devuelva su suma
 
+function defaultSum(a = 0, b = 0) {
+    console.log(a + b)
+}
+
+defaultSum(10); // Si le damos un solo parámetro, el otro será 0 por defecto
+
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
