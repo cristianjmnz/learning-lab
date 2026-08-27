@@ -7,7 +7,14 @@ function defaultSum(a = 0, b = 0) {
 defaultSum(10); // Si le damos un solo parámetro, el otro será 0 por defecto
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+let num = [1, 2, 3, 4, 5];
+let otroArray = [10, 20, 30, 40, 50];
 
+function numMayor(array){
+    return Math.max(...array);
+}
+console.log(numMayor(num));
+console.log(numMayor(otroArray));
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
