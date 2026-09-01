@@ -12,4 +12,6 @@ La teoría la organizo en Obsidian; aquí recopilo ejercicios, experimentos y pe
 
 - 🟨 JavaScript
 
+- 🐍 Python
+
 Cada tecnología está organizada en su propia carpeta y crecerá conforme avance en mi aprendizaje.
