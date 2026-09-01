@@ -17,6 +17,12 @@ console.log(numMayor(num));
 console.log(numMayor(otroArray));
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
+let string = "Hola, ¿cómo estás?";
+function contarVocales(str) {
+    let vocales = str.match(/[aeiouáéíóú]/gi);
+    return vocales ? vocales.length : 0;
+}
+console.log(contarVocales(string)); 
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
