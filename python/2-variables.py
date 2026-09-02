@@ -78,3 +78,17 @@ print(igual)          # ==================== (20 signos igual)
 print("=" * 30)
 print("  REPORTE DE VENTAS")
 print("=" * 30)
+
+# Crear un generador de tarjeta de presentacion
+
+nombre = "Cristian Jimenez"
+profesion = "Desarrollador de Software"
+email = "cristian.jimenez@example.com"
+
+separador = "+" + "-" * 38 + "+"
+
+print(separador)
+print(f"| Nombre: {nombre}")
+print(f"| Profesión: {profesion}")
+print(f"| Email: {email}")
+print(separador)

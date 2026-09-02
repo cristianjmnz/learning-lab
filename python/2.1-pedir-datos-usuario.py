@@ -14,3 +14,5 @@ peso = float(input("¿Cuánto pesas en kg? "))
 altura = float(input("¿Cuánto mides en metros? "))
 imc = peso / (altura ** 2)
 print(f"Tu IMC es: {imc:.1f}")  # :.1f muestra 1 decimal
+
+# Con float() transformamos el texto en números
