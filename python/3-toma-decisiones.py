@@ -98,3 +98,27 @@ elif llegada_hora == hora_entrada and llegada_minutos == 0:
 else:
     retraso = (llegada_hora - hora_entrada) * 60 + llegada_minutos
     print(f"Llegas {retraso} minutos tarde. Avisa a tu jefe.")
+
+
+
+# juego piedra papel tijera
+jugador = "papel"
+maquina = "piedra"
+
+print("=== PIEDRA, PAPEL O TIJERAS ===")
+print(f"Tú: {jugador}")
+print(f"Máquina: {maquina}")
+print("")
+
+if jugador == maquina:
+    resultado = "¡EMPATE! Ambos eligieron lo mismo."
+elif jugador == "piedra" and maquina == "tijeras":
+    resultado = "¡GANASTE! Piedra aplasta tijeras."
+elif jugador == "papel" and maquina == "piedra":
+    resultado = "¡GANASTE! Papel envuelve piedra."
+elif jugador == "tijeras" and maquina == "papel":
+    resultado = "¡GANASTE! Tijeras cortan papel."
+else:
+    resultado = "PERDISTE. La máquina gana esta ronda."
+
+print(resultado)
