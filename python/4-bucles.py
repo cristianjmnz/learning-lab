@@ -50,3 +50,57 @@ print(f"El mensaje tiene {len(mensaje)} caracteres")  # 10 (incluye el espacio)
 # .lower() pasa todo a minúscula: útil para comparar sin importar MAY/min
 nombre = "ANA García"
 print(nombre.lower())  # "ana garcía"
+
+"""
+.lower() pone todo en minúscula, 
+.upper() pone todo en mayúscula, 
+.isdigit() te dice si un carácter es un número 
+.isupper() te dice si es mayúscula.
+"""
+
+
+# Bucle while
+# comprobar contraseña
+
+password_correcta = "secreto123"
+intentos = 0
+
+# Lo que el usuaario va tecleando, simulado
+lo_que_teclea = ["1234", "secreto","secreto123"]
+
+password = lo_que_teclea[intentos]
+
+while password != password_correcta:
+    intentos = intentos + 1
+    if intentos >= 3:
+        print("¡Demasiados intentos! Cuenta bloqueada.")
+        break # 'break' sale del bucle inmediatamente
+    restantes = 3 - intentos
+    print(f"Incorrecta. Te quedan {restantes} intentos.")
+    password = lo_que_teclea[intentos]
+if password == password_correcta:
+    print("¡Acceso concedido! Bienvenido.")
+
+
+"""
+### ¿for o while? Cuándo usar cada uno
+
+    USA FOR cuando sabes cuántas veces repetir: "haz esto 10 veces", "para cada usuario en la lista", "para cada número del 1 al 100".
+    USA WHILE cuando NO sabes cuántas veces: "pide la contraseña hasta que sea correcta", "lee datos hasta que el usuario escriba salir", "intenta conectar hasta que funcione".
+    En la duda, usa for. Es más seguro (no puedes crear un bucle infinito accidentalmente con for).
+"""
+
+# Contar cuantos aprobados y suspensos hay
+notas = [7.5, 4.0, 4.9, 5.1, 6.0, 3.5, 8.2]
+aprobados = 0
+suspensos = 0
+
+for nota in notas:
+    if nota >= 5:
+        aprobados = aprobados + 1
+    else:
+        suspensos = suspensos + 1
+
+print(f"Aprobados: {aprobados}, Suspensos: {suspensos}")
+
+# inicializar → iterar → acumular → resultado
