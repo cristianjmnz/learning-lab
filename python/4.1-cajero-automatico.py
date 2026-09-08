@@ -33,3 +33,6 @@ while opcion != "salir":
         print("¡Hasta luego! Recoge tu tarjeta.")
 
     turno = turno + 1
+
+# Cambia la lista de acciones y vuelve a ejecutar: el bucle se adapta solo.
+# Y fíjate: si quitas "salir" del final, el bucle no termina nunca.

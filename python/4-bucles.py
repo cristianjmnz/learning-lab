@@ -104,3 +104,14 @@ for nota in notas:
 print(f"Aprobados: {aprobados}, Suspensos: {suspensos}")
 
 # inicializar → iterar → acumular → resultado
+
+"""
+### Resumen
+
+    ▹for recorre una colección o un rango de números. Sabes cuántas veces se repite.
+    ▹while repite mientras una condición sea True. No sabes cuántas veces de antemano.
+    ▹range(n) genera números del 0 al n-1. range(a, b) va de a hasta b-1.
+    ▹break sale del bucle inmediatamente.
+    ▹El patrón acumulador: inicializar variable → iterar → acumular → resultado.
+    ▹CUIDADO con bucles infinitos: asegúrate de que la condición del while eventualmente sea False.
+"""
