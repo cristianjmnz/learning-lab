@@ -31,3 +31,31 @@ def mostrar_ticket(producto, precio, cantidad):
     print("=" * 30)
 
 mostrar_ticket("Café", 1.50, 3)
+
+
+# Scope: las variables dentro de una función son privadas
+def duplicar(numero):
+    resultado = numero * 2
+    return resultado
+
+valor = duplicar(5)
+print(valor) # 10
+
+# Esto daria ERROR:
+# print(resultado) # NameError: 'resultado' no existe fuera de la función
+
+
+# Combinar funciones
+# Validar un email (simplificado)
+def tiene_arroba(email):
+    return "@" in email
+
+def tiene_punto(email):
+    return "." in email
+
+def es_email_valido(email):
+    return tiene_arroba(email) and tiene_punto(email)
+
+print(es_email_valido("user@example.com")) # true
+print(es_email_valido("userexample.com"))  # false
+
