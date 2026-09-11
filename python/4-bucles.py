@@ -114,4 +114,4 @@ print(f"Aprobados: {aprobados}, Suspensos: {suspensos}")
     ▹break sale del bucle inmediatamente.
     ▹El patrón acumulador: inicializar variable → iterar → acumular → resultado.
     ▹CUIDADO con bucles infinitos: asegúrate de que la condición del while eventualmente sea False.
-"""
+""" 
