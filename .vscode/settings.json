@@ -1,0 +1,40 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "videogames_db",
+            "database": "videogames_db",
+            "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "videogames",
+            "database": "videogames_db",
+            "username": "cristian",
+            "password": ""
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "videogames_db",
+            "name": "videogames.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
